@@ -1,0 +1,7 @@
+/* Portfolio Grid */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;margin:0;padding:24px;background:#fff}
+.portfolio{max-width:1100px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:16px}
+.proj{background:#eef2ff;padding:28px;border-radius:12px;text-align:center;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.proj:hover{transform:translateY(-6px);transition:transform 200ms ease}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>To-Do List UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="todo-app">
+    <h1>To-Do</h1>
+    <form id="addForm">
+      <input id="newItem" placeholder="Add a task" autocomplete="off">
+      <button>Add</button>
+    </form>
+    <ul id="list"></ul>
+  </main>
+
+  <script>
+    // Minimal JS to make the UI usable — students can remove JS if they want CSS-only practice
+    const form = document.getElementById('addForm');
+    const list = document.getElementById('list');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const txt = document.getElementById('newItem').value.trim();
+      if (!txt) return;
+      const li = document.createElement('li');
+      li.textContent = txt;
+      li.addEventListener('click', () => li.classList.toggle('done'));
+      list.appendChild(li);
+      form.reset();
+    });
+  </script>
+</body>
+</html>

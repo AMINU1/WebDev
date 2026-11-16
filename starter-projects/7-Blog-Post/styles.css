@@ -1,0 +1,8 @@
+/* Blog Post */
+*{box-sizing:border-box}
+body{font-family:Georgia, 'Times New Roman', serif;margin:0;background:#fff;color:#0f172a;padding:24px}
+.post{max-width:780px;margin:0 auto}
+.meta{color:#6b7280;font-size:0.9rem}
+img{width:100%;height:auto;border-radius:8px;margin:12px 0}
+.content p{line-height:1.8;font-size:1.05rem}
+.content h2{margin-top:18px}

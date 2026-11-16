@@ -1,0 +1,8 @@
+/* Pricing Cards */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;margin:0;padding:24px;background:#f8fafc}
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:1000px;margin:0 auto}
+.card{background:#fff;padding:20px;border-radius:12px;text-align:center;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+.card.popular{transform:translateY(-6px);border:2px solid #312e81}
+.price{font-size:1.25rem;font-weight:700;margin:8px 0}
+.btn{display:inline-block;margin-top:12px;padding:8px 14px;background:#312e81;color:#fff;border-radius:8px;text-decoration:none}

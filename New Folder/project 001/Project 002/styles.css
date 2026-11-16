@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    width: 30%;
+    margin: 50px auto;
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.email {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.password {
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: #FB6C00;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="email"], input[type="password"] {
+    margin-right: 10px;
+    background-color: #fff;
+    outline: 1px solid #4CAF50;
+    border: none;
+    
+}
+
+input[type="email"], input[type="password"]:focus {
+    outline: 1px solid #FB6C00;
+}
+
+.social {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social a {
+     font-size: 30px;
+     margin: 0 15px;
+     color: #333;
+     text-decoration: none;
+     transition: color 0.3s ease;
+}
+        /* Change color on hover */
+.social-links a:hover {
+            color: #007bff;
+        }

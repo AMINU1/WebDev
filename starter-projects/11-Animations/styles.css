@@ -1,0 +1,8 @@
+/* Animations & micro-interactions */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;margin:0;padding:40px;background:#fff;display:flex;align-items:center;justify-content:center;gap:40px}
+.btn{padding:12px 20px;border-radius:10px;border:0;background:#2563eb;color:#fff}
+.btn.pulse:hover{animation:pulse 900ms infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+.loader{width:48px;height:48px;border-radius:50%;border:6px solid #e2e8f0;border-top-color:#2563eb;animation:spin 900ms linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}

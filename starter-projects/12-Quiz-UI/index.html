@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quiz UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="quiz">
+    <h1>Quick Quiz</h1>
+    <div id="q">Which language runs in a browser?</div>
+    <div class="choices">
+      <button>A) Python</button>
+      <button>B) Java</button>
+      <button>C) JavaScript</button>
+    </div>
+    <div id="result" aria-live="polite"></div>
+  </main>
+
+  <script>
+    document.querySelectorAll('.choices button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const correct = btn.textContent.includes('JavaScript');
+        document.getElementById('result').textContent = correct ? 'Correct!' : 'Try again.';
+        btn.classList.add(correct ? 'correct' : 'wrong');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/* Landing Page */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;margin:0;color:#0f172a}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(135deg,#2563eb 0%,#7c3aed 100%);color:#fff;padding:72px 0;text-align:center}
+.lead{opacity:0.95}
+.cta{display:inline-block;margin-top:16px;padding:10px 20px;background:#fff;color:#111;border-radius:8px;text-decoration:none}
+.features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:16px}
+.feature{background:#fff;padding:16px;border-radius:8px;box-shadow:0 4px 12px rgba(2,6,23,0.06)}
+footer{padding:16px;text-align:center;color:#6b7280}

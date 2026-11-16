@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Developer Portfolio</title>
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar (Flexbox) -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">TheAmeen <span class="bottomText">-Tech Solutions-</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Aminu</span></h1>
+                <p>A passionate developer specializing in building responsive, accessible, and performant web applications using modern web technologies and semantic CSS.</p>
+                <div class="btn-group">
+                    <a href="#projects" class="btn">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- <div class="avatar-placeholder"> -->
+                    <img src="MyPic.png" alt="hero picture" >
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section (CSS Grid) -->
+        <section id="skills">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <p>Building intuitive user interfaces with HTML5, CSS3, modern JavaScript, and component-based libraries.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>CSS Architecture</h3>
+                    <p>Utilizing Custom Properties, CSS Grid, Flexbox, and responsive mobile-first workflows for scalable layouts.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Backend Engineering</h3>
+                    <p>Developing scalable server-side systems, RESTful APIs, and database integrations.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Version Control</h3>
+                    <p>Managing codebase collaboration, branching strategies, and CI/CD pipelines with Git and GitHub.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section (CSS Grid) -->
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <div class="project-img">Project Preview</div>
+                    <div class="project-info">
+                        <h3>E-Commerce Web App</h3>
+                        <p>A full-featured online store layout with dynamic product filtering, cart management, and a clean checkout UI.</p>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#projects" class="btn project-btn">Source Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">Project Preview</div>
+                    <div class="project-info">
+                        <h3>Task Management Dashboard</h3>
+                        <p>An interactive Kanban-style organization workspace featuring component architecture and structured layouts.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Flexbox</span>
+                            <span class="tag">CSS Variables</span>
+                        </div>
+                        <a href="#projects" class="btn project-btn">Source Code</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-img">Project Preview</div>
+                    <div class="project-info">
+                        <h3>Analytics SaaS Landing Page</h3>
+                        <p>A high-converting, fully responsive marketing page optimized for performance and mobile viewing layouts.</p>
+                        <div class="tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">Advanced CSS</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <a href="#projects" class="btn project-btn">Source Code</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Aminu Abdulmumin Amfani. Built with pure HTML and External CSS.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+/* Responsive Navbar */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial,sans-serif;margin:0}
+.container{max-width:960px;margin:0 auto;padding:16px;display:flex;align-items:center}
+.site-header{background:#fff;border-bottom:1px solid #e6e6ef}
+.brand{font-weight:700}
+.nav{margin-left:auto;display:flex;gap:16px}
+.nav a{text-decoration:none;color:#0f172a}
+.menu-toggle{display:none;border:0;background:transparent;font-size:1.4rem}
+
+/* Mobile */
+@media (max-width:640px){
+  .container{display:flex;align-items:center}
+  .nav{position:absolute;top:64px;right:16px;background:#fff;flex-direction:column;padding:12px;border-radius:8px;box-shadow:0 8px 20px rgba(2,6,23,0.08);display:none}
+  .nav.open{display:flex}
+  .menu-toggle{display:block;margin-left:12px}
+}
